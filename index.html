@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Chapter 46, 48 (Events)</h2>
+
+    <h3>Q1:</h3>
+    <a onclick="greet()" href="">Hello!!</a>
+    <br />
+
+    <h3>Q2:</h3>
+    <button onclick="vanish()">Hide</button>
+    <button id="nextButton">Next Button</button>
+    <br />
+
+    <h3>Q3:</h3>
+    <input
+      onmouseover="this.style.backgroundColor = 'lightblue'"
+      onmouseout="this.style.backgroundColor = 'white'"
+      id="Name"
+      type="text"
+      placeholder="Enter Username"
+    />
+
+    <h3>Q4:</h3>
+    <a onclick="scrollBack()" href="">Scroll back to Top</a>
+
+    <h3>Q5:</h3>
+    <a onclick="sound()" id="play" href="">Play Audio</a>
+    <audio
+      id="play"
+      src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all"
+    ></audio>
+
+    <h3>Q6:</h3>
+    <a onclick="newWindow()" href="">Open Google in new Tab</a>
+
+    <h3>Q7:</h3>
+    <button onclick="goAway()" href="">Don't Press this Button</button>
+
+    <h3>Q8:</h3>
+    <button
+      onmouseover="this.style.backgroundColor = 'lightblue'"
+      onmouseout="this.style.backgroundColor = 'white'"
+      id="Name"
+      type="text"
+    >
+      Hover This Button
+    </button>
+
+    <h3>Q9:</h3>
+    <button onclick="cheekh()" id="suno" href="">Play Sound</button>
+    <audio
+      id="play"
+      src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all"
+    ></audio>
+
+    <h3>Q10:</h3>
+    <a onmouseover="msg()">Hover this please</a>
+
+    <h3>Q11:</h3>
+    <a onmouseout="this.style.display = 'none'">Flash Link</a>
+
+    <h3>Q12:</h3>
+    <a onclick="windowLink()" href="">Google</a>
+    <button onblur="windowLink()"></button>
+
+    <h2>Chapter 49, 50 (Reading and Setting field values)</h2>
+
+    <h3>Q1:</h3>
+    <input type="text" id="read" placeholder="Enter a value" />
+    <button onclick="read()">Print on console</button>
+
+    <h3>Q2:</h3>
+    <input type="checkbox" id="read1" value="great" />
+    <button onclick="read1()">Print on console</button>
+
+    <h3>Q3:</h3>
+    <select id="cities">
+      <option disabled selected value="Select one city">Select one city</option>
+      <option value="Karachi">Karachi</option>
+      <option value="Islamabad">Islamabad</option>
+      <option value="Lahore">Lahore</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Multan">Multan</option>
+    </select>
+    <button onclick="bestCity();">Print on console</button>
+
+    <h3>Q4</h3>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+      necessitatibus qui tenetur error nobis, corrupti modi perferendis hic ut
+      aliquam!
+    </p>
+    <button onclick="paragraph();">Add an ID to a Paragraph</button>
+
+    <h3>Q5</h3>
+    <label>Choose your Marital Status</label>
+    <select name="maritalStatus" id="maritalstatus">
+      <option value="married">Married</option>
+      <option value="single">Single</option>
+    </select>
+    <button onclick="checkStatus()">Check Availability</button>
+    <input type="text" id="status" name="availability" />
+    
+    <script src="app.js"></script>
+  </body>
+</html>
